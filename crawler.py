@@ -15,6 +15,7 @@ print("CRAWLER: IMPORT COMPLETED!")
 
 # BROWSER = webdriver.Chrome()
 BROWSER = webdriver.PhantomJS()
+BROWSER.set_page_load_timeout(10)
 
 ENTRY_DICT = {
     "weather_entry": "天気",

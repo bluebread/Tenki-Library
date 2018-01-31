@@ -102,3 +102,7 @@ ENV/
 
 #VSCode
 .vscode
+
+#CSV FILE
+fast_place_weather.csv
+place_weather.csv
