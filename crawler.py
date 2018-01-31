@@ -13,8 +13,8 @@ from pandas import DataFrame, concat, read_csv
 
 print("CRAWLER: IMPORT COMPLETED!")
 
-BROWSER = webdriver.Chrome()
-# BROWSER = webdriver.PhantomJS()
+# BROWSER = webdriver.Chrome()
+BROWSER = webdriver.PhantomJS()
 
 ENTRY_DICT = {
     "weather_entry": "天気",
@@ -245,3 +245,5 @@ if __name__ == '__main__':
     pw_df.to_csv("place_weather.csv", encoding="cp932")
 
     print(pw_df)
+
+BROWSER.quit()
