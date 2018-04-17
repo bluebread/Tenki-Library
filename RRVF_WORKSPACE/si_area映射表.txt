@@ -1,0 +1,107 @@
+// //選擇地理位置上更近的觀測點
+
+//pw尚無記載的區域
+"Numazu" 東海地方 静岡県 三島
+"Shimada" 東海地方 静岡県 御前崎
+"Ito" 東海地方 静岡県 網代
+"Fujinomiya" 東海地方 静岡県 静岡
+
+"Nishinomiya" 近畿地方 兵庫県 神戸
+"Amagasaki" 近畿地方 大阪府 大阪
+"Akashi"　近畿地方 兵庫県 神戸
+"Kakogawa"　近畿地方 兵庫県 姫路
+"Takarazuka" 近畿地方 大阪府 大阪
+
+"Tokachi" 北海道地方 道東 釧路
+"Ashibetsu" 北海道地方 道北 旭川
+"Kato" 北海道地方 道東 帯広
+
+"Kurume" 九州地方 佐賀県 佐賀
+"Chikushino" 九州地方 福岡県 福岡
+"Kitakyushu" 中国地方 山口県 下関	
+"Itoshima" 九州地方 福岡県 福岡
+"Yame" 九州地方 佐賀県 佐賀
+
+"Nagaoka" 北陸地方 新潟県 新潟
+"Joetsu" 北陸地方 新潟県 高田
+"Shibata" 北陸地方 新潟県 新潟
+"Kashiwazaki" 北陸地方 新潟県 高田
+
+"osaki" 東北地方 宮城県 石巻	
+"Shiogama" 東北地方 宮城県 仙台
+
+"Niiza" 関東・甲信地方 東京都 東京都心
+
+"Higashihiroshima" 中国地方 広島県 呉
+"Hiroshima" 中国地方 広島県 広島
+
+//東京特例
+"Machida"　関東・甲信地方 神奈川県　横浜	
+
+//東京區域
+"Setagaya" 関東・甲信地方 東京都 東京都心
+"Chuo"関東・甲信地方 東京都 東京都心
+"Sumida" 関東・甲信地方 東京都 東京都心
+"Nerima" 関東・甲信地方 東京都 東京都心
+"Shibuya" 関東・甲信地方 東京都 東京都心
+"Taito" 関東・甲信地方 東京都 東京都心
+"Koto" 関東・甲信地方 東京都 東京都心
+"Shinjuku"関東・甲信地方 東京都 東京都心
+"Kita" 関東・甲信地方 東京都 東京都心
+"Bunkyo" 関東・甲信地方 東京都 東京都心
+"Chiyoda" 関東・甲信地方 東京都 東京都心
+"Toshima"関東・甲信地方 東京都 東京都心
+"Minato" 関東・甲信地方 東京都 東京都心
+"Chofu" 関東・甲信地方 東京都 東京都心
+"Hachioji" 関東・甲信地方 東京都 東京都心
+"Adachi" 関東・甲信地方 東京都 東京都心
+"Hino" 関東・甲信地方 東京都 東京都心
+"Kokubunji"関東・甲信地方 東京都 東京都心
+"Nishitokyo" 関東・甲信地方 東京都 東京都心
+"Itabashi" 関東・甲信地方 東京都 東京都心
+"Shinagawa" 関東・甲信地方 東京都 東京都心
+"Fussa" 関東・甲信地方 東京都 東京都心
+"Suginami" 関東・甲信地方 東京都 東京都心
+"Koganei" 関東・甲信地方 東京都 東京都心
+"Tama" 関東・甲信地方 東京都 東京都心
+"ota"関東・甲信地方 東京都 東京都心
+"Tachikawa"関東・甲信地方 東京都 東京都心
+"Musashino" 関東・甲信地方 東京都 東京都心
+"Fuchu" 関東・甲信地方 東京都 東京都心
+"Katsushika" 関東・甲信地方 東京都 東京都心
+"Edogawa" 関東・甲信地方 東京都 東京都心
+"Meguro" 関東・甲信地方 東京都 東京都心
+"Nakano" 関東・甲信地方 東京都 東京都心
+
+//大阪特例
+"Kaizuka" 近畿地方 和歌山県 和歌山
+
+//大阪地區
+"Neyagawa"　近畿地方 大阪府　大阪
+"Sakai"　近畿地方 大阪府　大阪
+"Takatsuki"近畿地方 大阪府　大阪
+"Ibaraki"　近畿地方 大阪府　大阪
+"HigashiOsaka"　近畿地方 大阪府　大阪
+"Minoo"　近畿地方 大阪府　大阪
+"Suita"　近畿地方 大阪府　大阪
+
+//已經存在於pw的區域
+"Himeji" 近畿地方 兵庫県 姫路	
+"Fukuoka" 九州地方 福岡県 福岡	
+"Kobe" 近畿地方 兵庫県 神戸
+"Osaka" 近畿地方 大阪府 大阪
+"Shizuoka"  東海地方	静岡県 静岡
+"Hamamatsu" 東海地方	静岡県 浜松
+"Yokohama" 関東・甲信地方 神奈川県 横浜	
+"Sapporo" 北海道地方 道央 札幌
+"Sendai" 東北地方 宮城県 仙台
+"Niigata" 北陸地方 新潟県 新潟
+"Fukuyama" 中国地方 広島県 福山
+"Asahikawa" 北海道地方 道北 旭川	
+"Hakodate" 北海道地方 道南 函館
+"Iizuka" 九州地方 福岡県 飯塚
+"Abashiri" 北海道地方 道東 網走
+
+//其他
+"Prefecture" 近畿地方 大阪府　大阪
+"None"

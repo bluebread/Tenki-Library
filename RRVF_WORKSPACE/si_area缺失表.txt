@@ -1,0 +1,106 @@
+
+pw = place_weather.csv
+si = store_info.csv
+
+big_area: 
+	"北海道" pw只有"道北~道南" 没有"北海道"
+mid_area:
+	"东京" si中所有东京行政区都只能算在东京中
+		"Setagaya" 世田谷区
+		"Chuo" 中央区
+		"Sumida" 墨田区
+		"Nerima" 練馬区
+		"Shibuya" 渋谷区
+		"Taito" 台東区
+		"Koto" 江東区
+		"Shinjuku" 新宿区
+		"Kita" 北区
+		"Bunkyo" 文京区
+		"Chiyoda" 千代田区
+		"Toshima" 豊島区
+		"Minato" 港区
+		"Machida" 町田市
+		"Chofu" 調布市
+		"Hachioji" 八王子市
+		"Adachi" 足立区
+		"Hino" 日野市
+		"Kokubunji" 国分寺市
+		"Nishitokyo" 西東京市
+		"Itabashi" 板橋区
+		"Shinagawa" 品川区
+		"Fussa" 福生市
+		"Suginami" 杉並区
+		"Koganei" 小金井市
+		"Tama" 多摩市
+		"ota" 大田区
+		"Tachikawa" 立川市
+		"Musashino" 武蔵野市
+		"Fuchu" 府中市
+		"Katsushika" 葛飾区
+		"Edogawa" 江戸川区
+		"Meguro" 目黒区
+		"Nakano" 中野区
+	"大阪府"　同東京，下列行政區皆視為大阪：
+		"Neyagawa" 寝屋川市
+		"Sakai" 堺市
+		"Takatsuki" 高槻市
+		"Kaizuka" 貝塚市
+		"Ibaraki" 茨木市
+		"HigashiOsaka" 東大阪市
+		"Minoo"　箕面市
+		"Suita" 吹田市
+
+	pw中未记载 待研究: 
+		"Numazu" 静岡県 沼津市
+		"Shimada" 静岡　島田市
+		"Ito" 静岡　伊東市
+		"Fujinomiya"　静岡　富士宮
+
+		"Nishinomiya" 兵庫 西宮市
+		"Amagasaki"　兵庫 尼崎市
+		"Akashi" 兵庫　明石市
+		"Kakogawa"　兵庫　加古川市
+		"Takarazuka" 兵庫　宝塚市
+
+		"Tokachi" 北海道　十勝郡(道中?)
+		"Ashibetsu"　北海道 蘆別市
+		"Kato" 北海道　河東郡
+
+		"Kurume" 福岡　久留米市
+		"Chikushino" 福岡　筑紫野市
+		"Kitakyushu"　福岡 北九州市
+		"Itoshima"　福岡 糸島市
+		"Yame"　福岡 八女市
+
+		"Nagaoka" 新潟　長岡市
+		"Joetsu" 新潟　上越市
+		"Shibata" 新潟　新発田市
+		"Kashiwazaki" 新潟　柏崎市
+
+		"osaki"　宮城 大崎市
+		"Shiogama" 宮城　塩釜市
+
+		"Niiza"　埼玉　新座市
+
+		"Higashihiroshima" 広島　東広島市
+		"Hiroshima" 広島　広島市
+
+	"Prefecture" = "Osaka" 全部代表大阪
+	"None" 
+
+	存在于pw:
+		"Himeji" 姫路
+		"Fukuoka" 福岡
+		"Kobe" 神戸
+		"Osaka" 大阪
+		"Shizuoka"  静岡
+		"Hamamatsu" 浜松
+		"Yokohama" 横浜
+		"Sapporo" 札幌
+		"Sendai" 仙台
+		"Niigata" 新潟
+		"Fukuyama" 福山
+		"Asahikawa" 旭川
+		"Hakodate" 函館
+		"Iizuka" 飯塚
+		"Abashiri" 網走
