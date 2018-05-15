@@ -2,7 +2,6 @@
 FASTER CRAWLER
 """
 from datetime import date, timedelta, datetime
-import re
 import time
 from random import random
 from urllib.request import urlopen
@@ -69,16 +68,28 @@ def get_weather_data(now_date, place_row):
 
     data_matrix = np.array(day_weather).T
 
-    col_len = len(list(attrs))
-    cols = [[big_area] * col_len, [mid_area] * col_len, [sml_area] * col_len,
-            list(attrs)]
+#    col_len = len(list(attrs))
+#    cols = [[big_area] * col_len, [mid_area] * col_len, [sml_area] * col_len,
+#            list(attrs)]
+    cols = list(attrs)
 
     ind_len = data_matrix.shape[0]
     thrhour = [i for i in range(3, 25, 3)]
-    inds = [[now_date.strftime("%Y, %m, %d")] * ind_len, thrhour]
-    dw_df = DataFrame(data_matrix, columns=cols, index=inds)
-    dw_df.index.names = ['date', 'hour']
-
+#    inds = [[now_date.strftime("%Y, %m, %d")] * ind_len, thrhour]
+#    dw_df = DataFrame(data_matrix, columns=cols, index=inds)
+#    dw_df.index.names = ['date', 'hour']
+    dw_df = DataFrame(data_matrix, columns=cols)
+    
+    time_df = DataFrame(
+            {"date": [now_date.strftime("%Y, %m, %d")] * ind_len,
+             "hour": thrhour})
+    
+    area_df = DataFrame(
+            {"big_area": [big_area] * ind_len,
+             "mid_area": [mid_area] * ind_len,
+             "sml_area": [sml_area] * ind_len})
+    dw_df = concat([time_df, dw_df, area_df], axis=1)
+        
     return dw_df
 
 
@@ -120,7 +131,7 @@ if __name__ == '__main__':
         now_date = date(2016, 1, 1)
 
         dwdfs = []
-        while now_date < date(2017, 6, 1):
+        while now_date < date(2016, 1, 3):
             print("{5} ({0} {1} {2} {3}): {4}".format(
                 row['big_area'], row['mid_area'], row['sml_area'],
                 row['place_code'], now_date, index))
@@ -133,7 +144,8 @@ if __name__ == '__main__':
         aw_df = concat(dwdfs)
         awdfs.append(aw_df)
 
-    pw_df = concat(awdfs, axis=1)
-    pw_df.to_csv("fast_place_weather.csv", encoding="cp932")
+    pw_df = concat(awdfs)
+    pw_df.to_csv("fast_place_weather.csv", encoding="cp932", index=False)
+    
 
     print(pw_df)
